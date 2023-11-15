@@ -1,6 +1,17 @@
 module.exports = function(app, shopData) {
 
     // Handle our routes
+    app.get('/list', function(req, res) {
+        let sqlquery = "SELECT * FROM books"; // query database to get all the books
+        // execute sql query
+        db.query(sqlquery, (err, result) => {
+            if (err) {
+                res.redirect('./'); 
+            }
+            res.send(result)
+         });
+    });
+
     app.get('/',function(req,res){
         res.render('index.ejs', shopData)
     });
