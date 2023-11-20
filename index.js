@@ -1,4 +1,4 @@
-// Import the modules we need.
+// Import the modules we need..
 var mysql = require('mysql');
 var express = require ('express')
 var ejs = require('ejs')
