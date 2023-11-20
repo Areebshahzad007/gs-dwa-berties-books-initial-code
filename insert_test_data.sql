@@ -1,4 +1,4 @@
-# Insert data into the tables
+# .Insert data into the tables
 
 USE myBookshop;
 
