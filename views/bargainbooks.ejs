@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set the title for the Bargain Books page -->
+    <title>Bargain Books</title>
+    <!-- Link to the main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+</head>
+<body>
+    <!-- Display the heading for the Bargain Books page -->
+    <h1>Bargain Books (Priced under £20)</h1>
+    <!-- Unordered list to display the bargain books -->
+    <ul>
+        <!-- Loop through each book and display its name and price -->
+        <% for (let book of books) { %>
+            <li><%= book.name %> - £<%= book.price.toFixed(2) %></li>
+        <% } %>
+    </ul>
+</body>
+</html>

@@ -1,13 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
+<head>
+    <!-- Set the title dynamically with the shopName variable -->
     <title>Welcome to <%=shopName%></title>
-    <link rel="stylesheet"  type="text/css" href="/main.css" />
-  </head>
-  <body>
+    <!-- Link to the main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+</head>
+<body>
+    <!-- Display the welcome heading with the shopName -->
     <h1>Welcome to <%=shopName%></h1>
+    
+    <!-- Navigation links to different sections of the site -->
     <p><a href="about">About <%=shopName%></a></p>
     <p><a href="search">Search for books</a></p>
+    <p><a href="addbook">Add a new book</a></p>
+    <p><a href="list">List books</a></p>
+    <p><a href="bargainbooks">Bargain books</a></p>
     <p><a href="register">Register with us</a></p>
-  </body>
+</body>
 </html>

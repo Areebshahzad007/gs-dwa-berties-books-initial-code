@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set the title dynamically with the shopName variable -->
+    <title><%=shopName%> Shop</title>
+    <!-- Link to the main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+</head>
+<body>
+    <!-- Display the shopName in the heading along with "Shop" -->
+    <h1><%=shopName%> Shop</h1>
+    
+    <!-- Description of the content on the page -->
+    <p>Here are the books that we sell:</p>
+    
+    <!-- Unordered list to display the available books and their prices -->
+    <ul>
+        <!-- Loop through each book and display its name and price -->
+        <% for (let book of availableBooks) { %>
+            <li><%= book.name %> - £<%= book.price %></li>
+        <% } %>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!-- search-result.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Set the title for the Search Results page -->
+    <title>Search Results</title>
+    <!-- Link to the main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+</head>
+<body>
+    <!-- Display the heading for the Search Results page with the search keyword -->
+    <h1>Search Results for '<%= keyword %>'</h1>
+
+    <!-- Check if there are books and display them in a list if found -->
+    <% if (books && books.length > 0) { %>
+        <ul>
+            <!-- Loop through each book and display its id, name, and price -->
+            <% books.forEach(book => { %>
+                <li>
+                    <span class="book-id"><%= book.id %></span>
+                    <span class="book-name"><%= book.name %></span>
+                    <span class="book-price"> £<%= book.price %></span>
+                </li>
+            <% }); %>
+        </ul>
+    <% } else { %>
+        <!-- Display a message when no results are found -->
+        <h1>No results found.</h1>
+    <% } %>
+</body>
+</html>

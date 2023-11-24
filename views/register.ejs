@@ -1,16 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
+<head>
+    <!-- Set the title dynamically with the shopName variable -->
     <title>Register for <%=shopName%></title>
-    <link rel="stylesheet"  type="text/css" href="/main.css" />
-  </head>
-  <body>
+    <!-- Link to the main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+</head>
+<body>
+    <!-- Display the heading for the registration page along with the shopName -->
     <h1>Register for <%=shopName%></h1>
+    
+    <!-- Form for user registration with input fields for first name, last name, and email -->
     <form method="POST" action="/registered">
         <p>First name: <input id="first" type="text" name="first" value="first name" /></p>
         <p>Last name: <input id="last" type="text" name="last" value="last name" /></p>
         <p>Email: <input id="email" type="email" name="email" value="email" /></p>
+        <!-- Submit button to register the user -->
         <input type="submit" value="Register" />
-      </form>
-  </body>
+    </form>
+</body>
 </html>

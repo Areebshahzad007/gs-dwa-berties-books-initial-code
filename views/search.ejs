@@ -1,15 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
+<head>
+    <!-- Set the title dynamically with the shopName variable -->
     <title>Search <%=shopName%></title>
-    <link rel="stylesheet"  type="text/css" href="/main.css" />
-  </head>
-  <body>
+    <!-- Link to the main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+</head>
+<body>
+    <!-- Display the heading for the search page along with the shopName -->
     <h1>Search <%=shopName%></h1>
+    
+    <!-- Form for user search with input field for the search keyword -->
     <form action="/search-result" method="GET">
-      <p>What book do you want?</p>
-      <input id="search-box" type="text" name="keyword" value="Default">
-      <input type="submit" value="Search" >
+        <!-- Subheading for the search input -->
+        <h1>What book do you want?</h1>
+        <!-- Input field for the search keyword with a default value -->
+        <input id="search-box" type="text" name="keyword" value="Default">
+        <!-- Submit button to perform the search -->
+        <input type="submit" value="Search">
     </form>
-  </body>
+</body>
 </html>

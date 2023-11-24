@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Set the title dynamically with the shopName variable -->
+    <title><%=shopName%> - Add Book</title>
+    <!-- Link to the main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <!-- Display the shopName in the heading along with "Add Book" -->
+    <h1><%=shopName%>: Add Book</h1>
+    <!-- Form for adding a new book with input fields for book name and price -->
+    <form method="POST" action="/bookadded">
+        <p>Book name: <input id="name" type="text" name="name" required></p>
+        <p>Price: <input id="price" type="number" name="price" min="0" step="0.01" required></p>
+        <!-- Submit button to add the book -->
+        <input type="submit" value="Add Book">
+    </form>
+  </body>
+</html>
